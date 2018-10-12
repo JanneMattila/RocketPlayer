@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{97624CD0-BD0B-403C-B499-9724A09AD24C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{65FD4D76-C981-4E62-BE6A-6C0D325D5E39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{736CD13B-5059-4605-9DF7-F144A711D360}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deploy", "deploy", "{259B7A88-0E88-44AC-97CB-AB579BD7AFD9}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		Dockerfile = Dockerfile
+		deploy\rocket.yaml = deploy\rocket.yaml
+		deploy\rocketplayer.yaml = deploy\rocketplayer.yaml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rocket.Player", "src\Rocket.Player\Rocket.Player.csproj", "{D411EC06-B9D7-4A71-A014-38E14FB92D41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D411EC06-B9D7-4A71-A014-38E14FB92D41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D411EC06-B9D7-4A71-A014-38E14FB92D41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D411EC06-B9D7-4A71-A014-38E14FB92D41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D411EC06-B9D7-4A71-A014-38E14FB92D41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D411EC06-B9D7-4A71-A014-38E14FB92D41} = {97624CD0-BD0B-403C-B499-9724A09AD24C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7116710A-7D27-4B61-BF4E-1B2F966352A2}
+	EndGlobalSection
+EndGlobal

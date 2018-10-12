@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: rocket
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: rocketplayer
+  namespace: rocket
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: rocketplayer
+    spec:
+      containers:
+      - image: jannemattila/rocketplayer:latest
+        name: rocketplayer
+        env:
+          - name: APPLICATION_INSIGHTS_IKEY
+            value: ""
+          - name: Url
+            value: "http://rocket.azurewebsites.net/GameHub"
