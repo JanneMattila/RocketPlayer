@@ -13,10 +13,3 @@ name: 1.0.$(Rev:r)
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
-- task: Docker@1
-  displayName: 'Build an image'
-- task: Docker@1
-  displayName: 'Push an image'
-  inputs:
-    containerregistrytype: 'Container Registry'
-    dockerRegistryEndpoint: DockerHub
