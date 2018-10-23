@@ -7,7 +7,6 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 variables:
-  buildConfiguration: 'Release'
   imageName: 'jannemattila/rocketplayer'
 
 name: 1.0.$(Rev:r)
