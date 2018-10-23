@@ -1,5 +1,7 @@
 # Instructions
 
+[![Build Status](https://jannemattila.visualstudio.com/jannemattila/_apis/build/status/JanneMattila.RocketPlayer)](https://jannemattila.visualstudio.com/jannemattila/_build/latest?definitionId=32)
+
 ## Working with 'RocketPlayer'
 
 ### How to create image locally
