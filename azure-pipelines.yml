@@ -8,7 +8,7 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  imageName: 'rocketplayer'
+  imageName: 'jannemattila/rocketplayer'
 
 name: 1.0.$(Rev:r)
 steps:
