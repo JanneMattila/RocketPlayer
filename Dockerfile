@@ -1,6 +1,6 @@
 # This Dockerfile contains Build and Release steps:
 # 1. Build image
-FROM microsoft/dotnet:2.1.403-sdk-alpine3.7 AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:2.2.104-alpine3.8 AS build
 WORKDIR /source
 
 # Cache nuget restore
@@ -13,7 +13,7 @@ WORKDIR /source/Rocket.Player
 RUN dotnet publish Rocket.Player.csproj --output /app/ --configuration Release
 
 # 2. Release image
-FROM microsoft/dotnet:2.1.5-aspnetcore-runtime-alpine3.7
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.2.2-alpine3.8
 WORKDIR /app
 
 # Copy content from Build image

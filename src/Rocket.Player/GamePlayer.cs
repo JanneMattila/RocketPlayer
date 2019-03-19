@@ -223,7 +223,7 @@ namespace Rocket.Player
         {
             using (_logger.BeginScope(nameof(ProcessInput)))
             {
-                player.Fire1 = false; // _random.NextDouble() > 0.9;
+                player.Fire1 = _random.NextDouble() > 0.8;
                 player.Top = true; // _random.NextDouble() > 0.1;
                 if (player.Top)
                 {
